@@ -11,3 +11,4 @@ const func = (n, m) => {
     console.log(n, m);
     return n * m;
 };
+let a = 13;

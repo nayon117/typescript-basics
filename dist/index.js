@@ -6,3 +6,8 @@ let isTrue;
 // union types
 let surname;
 surname = 117;
+// function
+const func = (n, m) => {
+    console.log(n, m);
+    return n * m;
+};

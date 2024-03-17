@@ -95,9 +95,20 @@
 // func(2, 3);
 
 // rest parameter
-type funcType = (...m:number[]) => number[];
-const func:funcType = (...m) => {
-  return m;
-};
+// type funcType = (...m:number[]) => number[];
+// const func:funcType = (...m) => {
+//   return m;
+// };
 
-func(2, 3, 4);
+// func(2, 3, 4);
+
+// Function with objects
+// type funcType = (...m:number[]) => number;
+
+// const numb:funcType = function numb (n){
+//   return n;
+// }
+
+const getData = (product:{name:string, price:number}) => {
+  console.log(getData);
+}

@@ -109,22 +109,31 @@
 //   return n;
 // }
 
-interface product {
-  name:string;
-  price:number;
-  readonly id:number
-}
+// interface product {
+//   name:string;
+//   price:number;
+//   readonly id:number
+// }
 
-type getDataType = (product:product)=>void;
-const getData:getDataType = (product) => {
-  console.log(product.price, product.name);
-}
+// type getDataType = (product:product)=>void;
+// const getData:getDataType = (product) => {
+//   console.log(product.price, product.name);
+// }
 
-const productOne:product = {
-  id:1,
-  name:"laptop",
-  price:1000
+// const productOne:product = {
+//   id:1,
+//   name:"laptop",
+//   price:1000
 
-}
+// }
 
-getData(productOne);
+// getData(productOne);
+
+// // Never Type
+// const errorHandler = ():never =>{
+//   throw new Error("An Error Occured");
+// }
+
+// // theme mode
+// type thememode = "light" | "dark";
+// let theme:thememode = "light";

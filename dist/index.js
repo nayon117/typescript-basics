@@ -109,3 +109,26 @@
 // // theme mode
 // type thememode = "light" | "dark";
 // let theme:thememode = "light";
+// ----------------------------------------------
+// classes in typescript
+class Player {
+    constructor(height, weight, power) {
+        this.height = height;
+        this.weight = weight;
+        this.power = power;
+    }
+    myHeight() {
+        return this.height;
+    }
+}
+class player2 extends Player {
+    constructor(height, weight, power, special) {
+        super(height, weight, power);
+        this.special = special;
+    }
+    getMyPower() {
+        return this.power;
+    }
+}
+const nayon = new player2(6, 60, 100, true);
+console.log(nayon.getMyPower());

@@ -109,6 +109,22 @@
 //   return n;
 // }
 
-const getData = (product:{name:string, price:number}) => {
-  console.log(getData);
+interface product {
+  name:string;
+  price:number;
+  readonly id:number
 }
+
+type getDataType = (product:product)=>void;
+const getData:getDataType = (product) => {
+  console.log(product.price, product.name);
+}
+
+const productOne:product = {
+  id:1,
+  name:"laptop",
+  price:1000
+
+}
+
+getData(productOne);

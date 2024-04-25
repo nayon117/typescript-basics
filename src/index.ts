@@ -140,27 +140,39 @@
 // ----------------------------------------------
 
 // classes in typescript
-class Player {
-  constructor(
-    private height: number,
-    public weight: number,
-    protected power?: number
-  ) {}
-  myHeight() {
-    return this.height;
-  }
-}
+// class Player {
+//   constructor(
+//     private height: number,
+//     public weight: number,
+//     protected power?: number
+//   ) {}
+//   myHeight() {
+//     return this.height;
+//   }
+// }
 
-class player2 extends Player {
-  special: boolean;
-  constructor(height: number, weight: number, power: number,special:boolean) {
-    super(height, weight, power);
-    this.special = special;
-  }
-  getMyPower (){
-    return this.power;
-  }
+// class player2 extends Player {
+//   special: boolean;
+//   constructor(height: number, weight: number, power: number,special:boolean) {
+//     super(height, weight, power);
+//     this.special = special;
+//   }
+//   getMyPower (){
+//     return this.power;
+//   }
   
-}
-const nayon = new player2(6, 60, 100, true);
-console.log(nayon.getMyPower());
+// }
+// const nayon = new player2(6, 60, 100, true);
+// console.log(nayon.getMyPower());
+
+// Type Assertion
+// const a = document.getElementById("btn") as HTMLElement
+// const btn =<HTMLElement> document.getElementById("btn")  
+const btn =<HTMLElement> document.getElementById("btn")!  
+btn.onclick;
+
+// const img = document.getElementById("myimg") as HTMLImageElement;
+// img.src;
+
+const img = document.querySelector("img")!
+img.src;
